@@ -1,0 +1,241 @@
+:root{
+    --primario: #fff;
+    --negro: #000;
+    --gris: #232323;
+    --rojo: #ed2100;
+    --fuenteprincipal: 'Exo', sans-serif;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    background-color: var(--gris);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: var(--primario);
+    font-family: var(--fuenteprincipal);
+
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2.2rem;
+}
+
+h3{
+    font-size: 1.4rem;
+}
+p{
+    font-family: var(--fuenteprincipal);
+    color: var(--blanco);
+}
+a{
+    text-decoration: none;
+    color: var(--primario);
+}
+
+
+.contenedor{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 375px) {}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+   
+    
+}
+
+.bg-header{
+    background-color: var(--negro);
+    border-bottom: 3px solid var(--rojo);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    z-index: 999;
+}
+
+.cuenta_regresiva{
+    background-image: url(../img/background.jpg);
+    background-repeat: none;
+    background-size: cover;
+}
+
+.cuenta_regresiva_titulo{
+    padding-top: 3rem;
+    margin-top: 5rem;
+}
+
+.cuenta_regresiva_fecha{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    color: var(--primario);
+    font-weight: 700;
+}
+
+.cuenta_regresiva_contador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
+    border: 3px solid var(--primario); 
+}
+
+.cuenta_regresiva_contador p{
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cuenta_regresiva_numero{
+    margin-top: 1rem;
+}
+
+.cuenta_regresiva_label{
+    margin-top: -4rem;
+}
+
+.cuenta_regresiva_video_principal{
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0;
+}
+
+
+.videos_socchi_titulo{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: var(--primario);
+}
+
+.videos_socchi_contenido{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.videos_socchi_contenido p{
+    text-align: center;
+    color: var(--primario);
+}
+
+
+.footer_sochi{
+    background-color: var(--negro);
+    padding: 2rem 0;
+}
+
+.footer_sochi_contenedor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.footer_sochi_privacidad{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #fff;
+ 
+}
+
+  
+.videos_socchi_mini {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--rojo);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: var(--primario);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: inset(0);
+  }
+  
+  
+@media (max-width: 768px) {
+    .videos_socchi_contenido{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 420px) {
+
+.videos_socchi_contenido{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.cuenta_regresiva_contador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: 3px solid var(--primario); 
+}
+
+.cuenta_regresiva_contador p{
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cuenta_regresiva_numero{
+    margin-top: 1rem;
+}
+
+.cuenta_regresiva_label{
+    margin-top: -2rem;
+}
+
+
+}
